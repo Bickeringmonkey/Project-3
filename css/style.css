@@ -1,3 +1,5 @@
+@import "normalize.css";
+
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -5,160 +7,240 @@
 }
 
 body {
-    margin: 0 auto;
-    font-family: 'Libre Baskerville', serif;
-
+    background: #9CCDFF;
+    font-family: 'Fira Sans', sans-serif;
 }
-h1 {
-    margin-top: 0;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
+.primary-header h1{
     background: #2D3945;
-    color: white;
-    padding: 30px;
-}
-
-h2 {
-  font-size: 2em;
-  color: #2D3945;
-}
-
-h3 {
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
-
-.lead-intro {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-    font-size: 27px;
-    color: slategray;
-    padding-bottom: 20px;
-}
-
-.info {
-  text-align: left;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-.hr1 {
-    border: 4px solid #2D3945;
-   
-}
-
-.hr2 {
-    border: 2px solid #2D3945;
-   
-}
-
-form {
-    max-width: 650px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    border-radius: 8px;
-  }
-
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="phone"],
-  textarea,
-  select {
-    background: rgba(255,255,255,0.1);
-    border: none;
-    font-size: 14px;
-    height: auto;
     margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: #e8eeef;
-    color: #8aa097;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-  }
+    padding: 25px 0;
+    color: #9CCDFF;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
 
-  #zip {
-    width: 30%;
-  }
+.secondary-header {
+    text-align: center;
+}
 
-  fieldset {
+.secondary-header h3 {
+    color: #2D3945;
+    font-weight: 700;
     margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.double{
+    border: 2px solid #333F4a;
+    width: 95%;
+}
+
+.single,
+.single1 {
+    border: 1px solid #333F4a;
+    width: 95%;
+}
+
+
+/*
+=================================
+Form Styles
+=================================
+*/
+
+fieldset {
     border: none;
-  }
+}
+.container-a {
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 1000px;
+}
 
-  legend {
+.container-b {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+select, option, input, label, button {
+    padding: 0.2rem 0;
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+select,
+textarea {
+    border: none;
+    background-color: #e8eeef;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="phone"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #2D3945;
+}
+
+input[type="text"]:hover,
+input[type="phone"]:hover,
+input[type="email"]:hover,
+select:hover,
+textarea:hover {
+    background: rgb(165, 198, 231, 0.5);
+}
+
+#zip {
+    width: 30%;
+}
+
+.primary,
+.zip{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.primary input,
+.primary select {
+    flex-basis: 100%;
+}
+
+.secondary,
+.tertiary {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.secondary label,
+.tertiary label {
+    padding-left: 5px;
+}
+
+.area_label {
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder {
+    text-align: right;
+    font-size: 1rem;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+legend {
     font-size: 1.4em;
     margin-bottom: 5px;
     font-weight: 900;
     padding-top: 20px;
     padding-bottom: 10px;
   }
-  
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 14px;
-  }
-  
-  label.light {
-    font-weight: 300;
-    display: inline;
-  }
-  button {
+
+.area_label label,
+.secondary_label {
+    padding-bottom: 15px;
+}
+
+.area_label label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tertiary_radio {
+    padding: 20px 0;
+}
+
+textarea {
+    border-radius: 10px 10px 10px 10px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    text-align: center;
+}
+
+button {
     padding: 19px 39px 18px 39px;
-    color: #FFF;
-    background-color: rgb(12, 209, 166);
-    font-size: 18px;
+    color: #9CCDFF;
+    background-color: #2D3945;
+    font-size: 20px;
     text-align: center;
     font-style: normal;
     font-weight: 700;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid rgb(12, 209, 166);
+    border: 1px solid #2D3945;
     border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    box-shadow: 0 -1px 0 #2D3945 inset;
     margin-bottom: 10px;
-  }
+}
 
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin: 10px 4px 8px 0;
-  }
-
-  footer {
+footer {
     text-align: center;
     color: slategray;
-    padding: 10px ;
+    padding-bottom: 20px ;
     font-style: italic;
-  }
+}
 
-  textarea {
-   border-radius: 10px 10px 10px 10px;
-   height: 150px;
-  }
+/*
+=======================
+Media Queries
+=======================
+*/
 
-  input::placeholder {
-    text-align: right;
-  }
+@media (min-width: 768px){
 
-  @media (min-width:768px) {
+    .primary {
+      flex-direction: row;  
+    }
     
-    form {
-      max-width: 50%;
-      margin: 10px auto;
-      padding: 10px 20px;
-      border-radius: 8px;
-    } 
+    .primary label {
+        padding-top: 10px;
+        flex-basis: 25%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
 
-    p {
-      font-size: 22px;
-      }
-  }
+    .primary select,
+    .primary option,
+    .primary input {
+        flex-basis: 75%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .zip {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .zip label {
+        padding-top: 10px;
+        flex-basis: 25%;
+    }
+
+    .zip input {
+        flex-basis: 20%;
+    }
+
+    .double,
+    .single{
+        width: 50%;
+    }
+    
+}
+
+
+
+
+
 
