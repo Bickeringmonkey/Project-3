@@ -97,7 +97,7 @@ textarea:focus {
     border: 1px solid #2D3945;
     box-shadow: 0 0 10px darkblue;
     outline: none;
-    transition: 1s ease;
+    transition: 0.5s ease;
 }
 
 input[type="text"]:hover,
