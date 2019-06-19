@@ -64,6 +64,12 @@ fieldset {
     max-width: 1000px;
 }
 
+/*
+============================
+Content Styles
+============================
+*/
+
 select, option, input, label, button {
     padding: 0.2rem 0;
     font-size: 1.2rem;
@@ -88,6 +94,8 @@ input[type="email"]:focus,
 select:focus,
 textarea:focus {
     border: 1px solid #2D3945;
+    box-shadow: 0 0 10px darkblue;
+    outline: none;
 }
 
 input[type="text"]:hover,
@@ -114,6 +122,28 @@ textarea:hover {
     flex-basis: 100%;
 }
 
+::placeholder {
+    text-align: right;
+    font-size: 1rem;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+
+/*
+=============================
+Newsletter Section
+=============================
+*/
+
 .secondary,
 .tertiary {
     padding-top: 5px;
@@ -130,21 +160,6 @@ textarea:hover {
     flex-direction: column;
 }
 
-::placeholder {
-    text-align: right;
-    font-size: 1rem;
-    font-style: italic;
-    padding-right: 10px;
-}
-
-legend {
-    font-size: 1.4em;
-    margin-bottom: 5px;
-    font-weight: 900;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-
 .area_label label,
 .secondary_label {
     padding-bottom: 15px;
@@ -154,6 +169,7 @@ legend {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .tertiary_radio {
     padding: 20px 0;
 }
@@ -167,6 +183,12 @@ textarea {
 textarea::placeholder {
     text-align: center;
 }
+
+/*
+===============================
+Button
+===============================
+*/
 
 button {
     padding: 19px 39px 18px 39px;
@@ -184,12 +206,19 @@ button {
     margin-bottom: 10px;
 }
 
+/*
+==========================
+Footer
+==========================
+*/
+
 footer {
     text-align: center;
     color: slategray;
     padding-bottom: 20px ;
     font-style: italic;
 }
+
 
 /*
 =======================
